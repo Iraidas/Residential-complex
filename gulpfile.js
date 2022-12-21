@@ -53,7 +53,7 @@ async function images() {
 }
 
 function cleanimg() {
-	return src('src/img/dest/', {allowEmpty: true}).pipe(clean())
+	return src('src/img/dest/**/*', {allowEmpty: true}).pipe(clean())
 }
 
 function cleanDist () {
@@ -63,7 +63,7 @@ function cleanDist () {
 function buildCopy () {
     return src([
         'src/css/**/*.min.css',
-        'src/img/dest/**',
+        'src/img/dest/**/*',
         'src/**/*.html',
     ], { base: 'src' })
     .pipe(versionNumber({
@@ -71,9 +71,7 @@ function buildCopy () {
         'append' : {
             'key' : '_v',
             'cover' : 0,
-            'to' : [
-                'css',
-            ],
+            'to' : 'css'
         },
         'output' : {
             'file' : 'src/version.json'
