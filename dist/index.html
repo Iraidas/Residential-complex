@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +14,13 @@
 </head>
 <body>
     <div class="background"> 
-        <img class="background-image" src="images/background-image.png" alt="backgtound-image">
         <header class="header">
             <div class="header-container">
                 <a class="logo-container" href="#">
                     <img class="logo" src="images/logo.png" alt="logo-png">
                     <p>жилой комплекс</p>
                 </a>
-                <div class="menu">
+                <ul class="menu">
                     <li class="menu-list-item">
                         <a class="menu-list-link" href="#">
                             О комплексе
@@ -47,26 +46,32 @@
                             Контакты
                         </a>
                     </li>
-                </div>
+                </ul>
             </div>
         </header>
         <main class="main">
             <section class="top">
-                <h2 class="title">
-                    Жилой комплекс в историческом центре
-                </h2>
-                <div class="mouse">
-                    <img src="images/mouse.svg" alt="mouse">
+                <div class="background-top">
+                    <img class="background-image-1" src="images/background-image-1.png" alt="background-image-1" >
                 </div>
-                <div class="contact-info">
-                    <li class="contact">
-                        <img class="location-icon" src="images/location-svg.svg" alt="location-icon">
-                        <p>Наб. реки Фонтанки 10-15</p>
-                    </li>
-                    <li class="contact">
-                        <img class="phone-icon" src="images/phone-svg.svg" alt="phone-icon">
-                        <p>8 (812) 123-45-67</p>
-                    </li>
+                <div class="container-top">
+                    <h2 class="main-title">
+                        Жилой комплекс в историческом центре
+                    </h2>
+                    <div class="mouse">
+                        <img src="images/mouse.svg" alt="mouse">
+                    </div>
+                    <ul class="contact-info">
+                        <li class="contact">
+                            <img class="location-icon" src="images/location-svg.svg" alt="location-icon">
+                            <p>Наб. реки Фонтанки 10-15</p>
+                        </li>
+                        <li class="contact">
+                            <img class="phone-icon" src="images/phone-svg.svg" alt="phone-icon">
+                            <p>8 (812) 123-45-67</p>
+                        </li>
+                    </ul>
+
                 </div>
             </section>
             <section class="testimonials">
@@ -98,7 +103,7 @@
                     <img class="background-image background-number-3" src="images/III.png" alt="number 3">
                 </div>
                 <div class="container-loft-examples">
-                    <p class="title-loft-examples">
+                    <p class="title title-loft-examples">
                         Наши квартиры
                     </p>
                     <div class="container-picture-loft">
@@ -127,6 +132,83 @@
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="request">
+                <div class="background-request">
+                    <img class="background-image-2" src="images/background-image-2.png" alt="background-image-2 " >
+                </div>
+                <div class="container-request">
+                    <div class="text-request">
+                        <div class="title title-request">
+                            Хотите посмотреть?
+                        </div>
+                        <div class="paragraph">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+                        </div>
+                    </div>
+                    <form class="request-form">
+                        <div class="request-block">
+                            <input class="form-input" type="text" name="login" placeholder="Ваше имя">
+                        </div>
+                        <div class="request-block">
+                            <input class="form-input" type="tel" name="tel" placeholder="Ваш телефон">
+                        </div>
+                        <div class="request-block">
+                            <div class="note">
+                                *Мы никому не передаем ваши данные. 
+                                И не сохраняем ваш номер в базу.
+                            </div>
+                        </div>
+                        <div class="request-block">
+                            <button class="request-button">Посмотреть район</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="video-review">
+                <div class="background-video-review">
+                    <img class="background-image background-number-4" src="images/IV.png" alt="number-4">
+                </div>
+                <div class="container-video-review">
+                    <video class="video" poster="images/splash-screen-video.png" src="" controls></video>
+                </div>
+            </section>
+            <section class="location">
+                <div class="background-location">
+                    <img class="background-image background-number-5" src="images/V.png" alt="number-5">
+                </div>
+                <div class="container-location">
+                    <p class="title title-loft-examples">
+                        Район на карте
+                    </p>
+                    <map class="map" name="location-residential-conplex">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18136.10124799995!2d60.41218098333057!3d75.50438370849086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1674729583113!5m2!1sen!2sru" width="1110" height="358" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </map>
+                </div>
+            </section>
+            <section class="question">
+                <div class="container-question">
+                    <p class="title title-question">
+                        Есть вопросы?
+                    </p>
+                    <form class="request-form question-form">
+                        <div class="request-block">
+                            <div class="note">
+                                *Мы никому не передаем ваши данные. 
+                                И не сохраняем ваш номер в базу.
+                            </div>
+                        </div>
+                        <div class="request-block">
+                            <input class="form-input" type="text" name="login" placeholder="Ваше имя">
+                        </div>
+                        <div class="request-block">
+                            <input class="form-input" type="tel" name="tel" placeholder="Ваш телефон">
+                        </div>
+                        <div class="request-block">
+                            <button class="request-button">Посмотреть район</button>
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>
@@ -209,12 +291,12 @@
                     <li class="footer-list-item">
                         <div class="footer-social-contact">
                             E-mail: 
-                            <a class="fooler-link-mail" href="mailto: vip@housevip.ru">
+                            <a class="fooler-link-mail" href="mailto:vip@housevip.ru">
                                 vip@housevip.ru
                             </a>
                         </div>
                     </li>
-                    <div class="footer-list-item">
+                    <li class="footer-list-item">
                         <a class="social-link" href="#">
                             <img class="logo-social-link logo-youtube" src="images/youtube-logo.svg" alt="logo-youtube">
                         </a>
@@ -227,7 +309,7 @@
                         <a class="social-link" href="#">
                             <img class="logo-social-link logo-instagram" src="images/instagram-logo.svg" alt="logo-instagram">
                         </a>
-                    </div>
+                    </li>
                 </ul>
             </div>
         </footer>
