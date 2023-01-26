@@ -14,18 +14,13 @@ body
     flex-grow: 1
     background-color: #242b33
 
-.background-image
-    position: absolute
-    width: 100%
-    z-index: 1
-
 .header
     display: flex
-    width: 100%
     justify-content: center
-    position: relative
+    position: absolute
+    width: 100%
     margin: 30px 0
-    z-index: 10
+    z-index: 100
 
 .header-container
     display: flex
@@ -43,7 +38,7 @@ body
 
 .logo
     width: 135px
-    padding-bottom: 10px 
+    padding-bottom: 10px
 
 .menu
     display: flex
@@ -63,13 +58,13 @@ body
     text-align: center
     white-space: nowrap
 
-.menu-list-item:last-child 
+.menu-list-item:last-child
     margin: 0
 
 .main
     display: flex
     width: 100%
-    margin-top: 166px
+    overflow: hidden
     align-items: center
     flex-direction: column
     justify-content: center
@@ -77,9 +72,25 @@ body
     z-index: 10
 
 .top
+    display: flex
+    flex-direction: column
+    justify-content: end
+    align-items: center
+    width: 100%
+
+.background-top
+    position: relative
+    width: 100%
+
+.background-image-1
+    width: 100%
+
+.container-top
+    position: absolute
+    z-index: 10
     width: 556px
 
-.title
+.main-title
     font-family: 'Playfair Display', serif
     text-align: center
     font-size: 48px
@@ -114,12 +125,16 @@ body
 .contact:last-child
     margin-right: 60px
 
-.testimonials
+%background-style
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
-    width: 1100px
     background-color: #242b33
+
+.testimonials
+    @extend %background-style
+    width: 1100px
 
 .background-testimonials
     display: flex
@@ -145,18 +160,15 @@ body
     width: 25%
 
 .loft-examples
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
+    @extend %background-style
     margin: 50px 0 0
     width: 1100px
-    background-color: #242b33
 
 .background-loft-examples
     display: flex
     position: relative
     justify-content: start
+    height: 1px
     width: 1530px
     top: 95px
     z-index: 1
@@ -203,15 +215,15 @@ body
     padding: 50px
 
 .request
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    background-color: #242b33
+    @extend %background-style
+    width: 100%
 
 .background-request
     display: flex
     position: relative
+    width: 100%
+
+.background-image-2
     width: 100%
 
 .container-request
@@ -267,7 +279,7 @@ body
 
 .form-input
     &::-webkit-input-placeholder
-        color:#b6b7b7
+        color: #b6b7b7
 
 .request-button
     width: 255px
@@ -276,31 +288,70 @@ body
     padding: 17px 0
     background: #D4C17F
 
+.video-review
+    @extend %background-style
+    position: inherit
+    width: 1100px
+    margin: 50px 0
 
+.background-number-4
+    height: 285px
+    width: 409px
 
+.background-video-review
+    display: flex
+    justify-content: end
+    align-items: center
+    position: absolute
+    width: 1520px
 
+.container-video-review
+    display: flex
+    justify-content: center
+    width: 719px
 
+.video
+    width: 719px
+    z-index: 10
 
+.location
+    @extend %background-style
+    width: 1110px
+    margin: 130px 0
 
+.background-location
+    display: flex
+    justify-content: start
+    align-items: flex-start
+    height: 1px
+    top: 95px
+    position: relative
+    width: 1420px
 
+.background-number-5
+    height: 285px
+    width: 277px
 
+.container-location
+    display: flex
+    flex-direction: column
+    justify-content: start
+    width: 1110px
 
+.map
+    display: flex
+    justify-content: center
+    margin: 100px 0
 
+.question
+    width: 1110px
+    margin: 0 0 180px
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.question-form
+    flex-wrap: nowrap
+    width: auto
+    height: auto
+    margin: 50px 0
 
 .footer
     display: flex
@@ -309,13 +360,12 @@ body
     background-color: #2d343c
     width: 100%
     justify-content: center
-    
+
 .footer-container
     display: flex
     justify-content: space-between
     margin: 60px 0
     width: 1110px
-
 
 %footer-style
     display: flex

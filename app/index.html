@@ -14,7 +14,6 @@
 </head>
 <body>
     <div class="background"> 
-        <img class="background-image" src="images/background-image.png" alt="backgtound-image">
         <header class="header">
             <div class="header-container">
                 <a class="logo-container" href="#">
@@ -52,21 +51,27 @@
         </header>
         <main class="main">
             <section class="top">
-                <h2 class="title">
-                    Жилой комплекс в историческом центре
-                </h2>
-                <div class="mouse">
-                    <img src="images/mouse.svg" alt="mouse">
+                <div class="background-top">
+                    <img class="background-image-1" src="images/background-image-1.png" alt="background-image-1" >
                 </div>
-                <div class="contact-info">
-                    <li class="contact">
-                        <img class="location-icon" src="images/location-svg.svg" alt="location-icon">
-                        <p>Наб. реки Фонтанки 10-15</p>
-                    </li>
-                    <li class="contact">
-                        <img class="phone-icon" src="images/phone-svg.svg" alt="phone-icon">
-                        <p>8 (812) 123-45-67</p>
-                    </li>
+                <div class="container-top">
+                    <h2 class="main-title">
+                        Жилой комплекс в историческом центре
+                    </h2>
+                    <div class="mouse">
+                        <img src="images/mouse.svg" alt="mouse">
+                    </div>
+                    <div class="contact-info">
+                        <li class="contact">
+                            <img class="location-icon" src="images/location-svg.svg" alt="location-icon">
+                            <p>Наб. реки Фонтанки 10-15</p>
+                        </li>
+                        <li class="contact">
+                            <img class="phone-icon" src="images/phone-svg.svg" alt="phone-icon">
+                            <p>8 (812) 123-45-67</p>
+                        </li>
+                    </div>
+
                 </div>
             </section>
             <section class="testimonials">
@@ -161,8 +166,51 @@
                     </form>
                 </div>
             </section>
-
-
+            <section class="video-review">
+                <div class="background-video-review">
+                    <img class="background-image background-number-4" src="images/IV.png" alt="number-4">
+                </div>
+                <div class="container-video-review">
+                    <video class="video" poster="images/splash-screen-video.png" src="" controls></video>
+                </div>
+            </section>
+            <section class="location">
+                <div class="background-location">
+                    <img class="background-image background-number-5" src="images/V.png" alt="number-5">
+                </div>
+                <div class="container-location">
+                    <p class="title title-loft-examples">
+                        Район на карте
+                    </p>
+                    <map class="map" name="location-residential-conplex">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18136.10124799995!2d60.41218098333057!3d75.50438370849086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1674729583113!5m2!1sen!2sru" width="1110" height="358" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </map>
+                </div>
+            </section>
+            <section class="question">
+                <div class="container-question">
+                    <p class="title title-question">
+                        Есть вопросы?
+                    </p>
+                    <form class="request-form question-form">
+                        <div class="request-block">
+                            <div class="note">
+                                *Мы никому не передаем ваши данные. 
+                                И не сохраняем ваш номер в базу.
+                            </div>
+                        </div>
+                        <div class="request-block">
+                            <input class="form-input" type="text" name="login" placeholder="Ваше имя">
+                        </div>
+                        <div class="request-block">
+                            <input class="form-input" type="tel" name="tel" placeholder="Ваш телефон">
+                        </div>
+                        <div class="request-block">
+                            <button class="request-button">Посмотреть район</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer-container">
